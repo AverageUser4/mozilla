@@ -43,21 +43,27 @@ function createHeaderNavDropdownElements($arr) {
 
 <body class="body">
 
+  <h1 class="invisible-h1">Internet for people, not profit.</h1>
+
   <header class="header">
 
-    <a class="mozilla-logo" href="https://www.mozilla.org/en-US/" target="_blank">
-      <img class="img mozilla-logo__img" src="resources/mozilla_logo.svg">
+    <a class="header__header-child mozilla-logo" href="https://www.mozilla.org/en-US/" target="_blank">
+      <img class="mozilla-logo__img" src="resources/general/mozilla_logo.svg">
     </a>
 
-    <nav class="header-nav">
+    <nav id="header-nav" class="header__header-child header-nav">
+
+      <div class="header-nav__vpn-button-mobile-container">
+        <a class="button header__vpn-button" href="#">Get Mozilla VPN</a>
+      </div>
 
       <ul class="header-nav__list">
 
-        <li class="header-nav__list-item">
+        <li id="header-nav-activator-1" class="header-nav__list-item">
 
           <h3 class="header-nav__list-item-name">Firefox Browsers</h3>
 
-          <div class="header-nav__dropdown-container">
+          <div id="header-nav-dropdown-1" class="header-nav__dropdown-container">
 
             <ul class="header-nav__dropdown">
   
@@ -117,11 +123,11 @@ function createHeaderNavDropdownElements($arr) {
 
         </li>
 
-        <li class="header-nav__list-item">
+        <li id="header-nav-activator-2" class="header-nav__list-item">
 
           <h3 class="header-nav__list-item-name">Products</h3>
 
-          <div class="header-nav__dropdown-container">
+          <div id="header-nav-dropdown-2" class="header-nav__dropdown-container">
 
             <ul class="header-nav__dropdown">
 
@@ -186,11 +192,11 @@ function createHeaderNavDropdownElements($arr) {
 
         </li>
 
-        <li class="header-nav__list-item">
+        <li id="header-nav-activator-3" class="header-nav__list-item">
 
           <h3 class="header-nav__list-item-name">Who We Are</h3>
 
-          <div class="header-nav__dropdown-container">
+          <div id="header-nav-dropdown-3" class="header-nav__dropdown-container">
 
             <ul class="header-nav__dropdown">
 
@@ -245,11 +251,11 @@ function createHeaderNavDropdownElements($arr) {
 
         </li>
 
-        <li class="header-nav__list-item">
+        <li id="header-nav-activator-4" class="header-nav__list-item">
 
           <h3 class="header-nav__list-item-name">Innovation</h3>
 
-          <div class="header-nav__dropdown-container">
+          <div id="header-nav-dropdown-4" class="header-nav__dropdown-container">
 
             <ul class="header-nav__dropdown">
 
@@ -298,12 +304,18 @@ function createHeaderNavDropdownElements($arr) {
 
     </nav>
 
-    <a class="button header__button" href="#">Get Mozilla VPN</a>
+    <a class="header__header-child button header__vpn-button header__vpn-button-desktop" href="#">Get Mozilla VPN</a>
+
+    <button id="header__toggle-menu-button" class="header__toggle-menu-button">
+      <img src="resources/general/menu_icon.svg">
+    </button>
 
   </header>    
 
 
-  <script defer src="js/classes/DropdownHandler.js"></script>
+  <script defer src="js/classes/HeaderNavDropdownDesktop.js"></script>
+  <script defer src="js/classes/HeaderNavDropdownMobile.js"></script>
+  <script defer src="js/classes/HeaderMenuDropdownMobile.js"></script>
   <script defer src="js/main.js"></script>
 
 </body>
