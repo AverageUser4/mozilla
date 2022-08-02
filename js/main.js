@@ -1,7 +1,9 @@
 "use strict";
 
-const headerNavDropdownMobile = new HeaderNavDropdownMobile();
-const headerNavDropdownDesktop = new HeaderNavDropdownDesktop();
 const headerMenuDropdownMobile = new HeaderMenuDropdownMobile();
 
+const headerNavDropdown = new HeaderNavDropdown();
+
 const fullFormActivator = new FullFormActivator();
+
+const stickyHeader = new StickyHeader();

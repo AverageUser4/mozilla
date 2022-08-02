@@ -105,10 +105,10 @@ function createFooterFollowListItems($arr) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mozilla</title>
   <link rel="stylesheet" href="css/main.css">
-  <script defer src="js/classes/HeaderNavDropdownDesktop.js"></script>
-  <script defer src="js/classes/HeaderNavDropdownMobile.js"></script>
+  <script defer src="js/classes/HeaderNavDropdown.js"></script>
   <script defer src="js/classes/HeaderMenuDropdownMobile.js"></script>
   <script defer src="js/classes/FullFormActivator.js"></script>
+  <script defer src="js/classes/StickyHeader.js"></script>
   <script defer src="js/main.js"></script>
   <noscript>
     <style>
@@ -144,9 +144,9 @@ function createFooterFollowListItems($arr) {
 
         <ul class="header-nav__list">
 
-          <li id="header-nav-activator-1" class="header-nav__list-item">
+          <li class="header-nav__list-item">
 
-            <h3 class="header-nav__list-item-name">Firefox Browsers</h3>
+            <button id="header-nav-activator-1" class="header-nav__list-item-button">Firefox Browsers</button>
 
             <div id="header-nav-dropdown-1" class="header-nav__dropdown-container">
 
@@ -208,9 +208,9 @@ function createFooterFollowListItems($arr) {
 
           </li>
 
-          <li id="header-nav-activator-2" class="header-nav__list-item">
+          <li class="header-nav__list-item">
 
-            <h3 class="header-nav__list-item-name">Products</h3>
+            <button id="header-nav-activator-2" class="header-nav__list-item-button">Products</button>
 
             <div id="header-nav-dropdown-2" class="header-nav__dropdown-container">
 
@@ -277,11 +277,11 @@ function createFooterFollowListItems($arr) {
 
           </li>
 
-          <li id="header-nav-activator-3" class="header-nav__list-item">
+          <li class="header-nav__list-item">
 
-            <h3 class="header-nav__list-item-name">Who We Are</h3>
+            <button id="header-nav-activator-3" class="header-nav__list-item-button">Who We Are</button>
 
-            <div id="header-nav-dropdown-3" class="header-nav__dropdown-container">
+            <div id="header-nav-dropdown-3" class="header-nav__dropdown-container  header-nav__dropdown-container-right">
 
               <ul class="header-nav__dropdown">
 
@@ -336,11 +336,11 @@ function createFooterFollowListItems($arr) {
 
           </li>
 
-          <li id="header-nav-activator-4" class="header-nav__list-item">
+          <li class="header-nav__list-item">
 
-            <h3 class="header-nav__list-item-name">Innovation</h3>
+            <button id="header-nav-activator-4" class="header-nav__list-item-button">Innovation</button>
 
-            <div id="header-nav-dropdown-4" class="header-nav__dropdown-container">
+            <div id="header-nav-dropdown-4" class="header-nav__dropdown-container header-nav__dropdown-container-right">
 
               <ul class="header-nav__dropdown">
 
@@ -400,7 +400,7 @@ function createFooterFollowListItems($arr) {
   </header>
 
 
-  <main>
+  <main class="the-main">
 
     <article class="width-cap celebrating-block">
 
@@ -538,7 +538,7 @@ function createFooterFollowListItems($arr) {
 
     <article class="width-cap love-web">
 
-      <div class="love-web__img_container">
+      <div class="love-web__img-container">
         <img class="love-web__img" src="resources/main/love_the_web.png" alt="People marching.">
       </div>
 
@@ -743,35 +743,35 @@ function createFooterFollowListItems($arr) {
 
       </nav>
 
-      <div>
+      <div class="the-footer__bottom">
 
-        <nav>
+        <nav class="the-footer__second-nav">
 
-          <ul>
+          <ul class="the-footer__second-nav-list">
 
-            <li><a href="#">Website Privacy Notice</a></li>
-            <li><a href="#">Cookies</a></li>
-            <li><a href="#">Legal</a></li>
-            <li><a href="#">Community Participation Guidelines</a></li>
-            <li><a href="#">About this site</a></li>
+            <li class="the-footer__second-nav-list-item"><a class="the-footer__second-nav-link" href="#">Website Privacy Notice</a></li>
+            <li class="the-footer__second-nav-list-item"><a class="the-footer__second-nav-link" href="#">Cookies</a></li>
+            <li class="the-footer__second-nav-list-item"><a class="the-footer__second-nav-link" href="#">Legal</a></li>
+            <li class="the-footer__second-nav-list-item"><a class="the-footer__second-nav-link" href="#">Community Participation Guidelines</a></li>
+            <li class="the-footer__second-nav-list-item"><a class="the-footer__second-nav-link" href="#">About this site</a></li>
 
           </ul>
 
-          <p>
-            Visit <a href="#">Mozilla Corporation's </a>
-            not-for-profit parent, <a href="#">the Mozilla Foundation.</a>
+          <p class="the-footer__second-nav-paragraph">
+            Visit <a class="the-footer__second-nav-link" href="#">Mozilla Corporation's </a>
+            not-for-profit parent, <a class="the-footer__second-nav-link" href="#">the Mozilla Foundation.</a>
             Portions of this content are ©1998-2022 by
             individual mozilla.org contributors. Content available under
-            a <a href="#">Creative Commons license.</a> 
+            a <a class="the-footer__second-nav-link" href="#">Creative Commons license.</a> 
           </p>
 
         </nav>
 
-        <div>
+        <div class="the-footer__language-container">
 
-          <a href="#">Language</a>
+          <a class="the-footer__language-link" href="#">Language</a>
           
-          <select class="very-cool-input cool-select">
+          <select class="the-footer__language-select very-cool-input cool-select">
                 <option>English</option>
                 <option>Basha Indonesia</option>
                 <option>Deutsch</option>
